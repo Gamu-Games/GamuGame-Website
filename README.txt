@@ -6,7 +6,11 @@ Pages:
   contact.html        Contact + business information
   privacy.html        Privacy Policy
   terms.html          Terms of Service
-  assets/             Game icon (used as favicon, og:image and game art)
+  assets/logo.png               Original company logo (opaque background)
+  assets/logo-transparent.png   Logo with background removed (used in nav)
+  assets/favicon.png            Square favicon / apple-touch-icon from the logo mark
+  assets/og-image.png           1200x630 social share image (og:image)
+  assets/snake-chroma-icon.png  Game icon (game art + og:image on game page)
   robots.txt
 
 Company details used on every page:
