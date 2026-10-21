@@ -1,114 +1,228 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Gamu Game Studios — Independent Mobile Game Studio</title>
 <meta name="description" content="Official website of CÔNG TY TNHH GAMU GAME STUDIOS (Gamu Game Studios), an independent game studio in Hanoi, Vietnam, creating mobile games such as Snake Chroma.">
+<meta name="theme-color" content="#0d0b0a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Gamu Game Studios">
 <meta property="og:title" content="Gamu Game Studios — Independent Mobile Game Studio">
 <meta property="og:description" content="We design, develop and publish mobile games with strong replay value. Developer of Snake Chroma.">
+<meta property="og:image" content="assets/og-image.png">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
-<meta property="og:image" content="assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-  <div class="container nav-wrap">
-    <a class="brand" href="index.html" aria-label="Gamu Game Studios — Home"><img src="assets/logo-transparent.png" alt="Gamu Game Studios" width="596" height="408"><span class="sr-only">GAMU GAME STUDIOS</span></a>
-    <div class="nav-links">
-      <a href="index.html#about">About</a>
-      <a href="snake-chroma.html">Snake Chroma</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </div>
-  </div>
-</nav>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<header class="hero">
-  <div class="container">
-    <div class="badge">Official company website</div>
-    <h1>We build simple, polished games with strong replay value.</h1>
-    <p>Gamu Game Studios is an independent game studio based in Hanoi, Vietnam, focused on creating accessible mobile game experiences for a global audience.</p>
-    <div class="actions">
-      <a class="btn primary" href="snake-chroma.html">View Snake Chroma</a>
-      <a class="btn secondary" href="contact.html">Contact us</a>
-    </div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Gamu Game Studios — Home"><img src="assets/logo-transparent.png" alt="Gamu Game Studios" width="596" height="408"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span class="i-open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span><span class="i-close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+    </button>
+    <nav id="nav-menu" class="nav-menu" aria-label="Main">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="snake-chroma.html">Games</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="contact.html#business">Work with us</a>
+    </nav>
   </div>
 </header>
 
-<section id="about">
-  <div class="container two">
+<main id="main">
+<section class="hero">
+  <div class="container hero-grid">
     <div>
-      <div class="kicker">About us</div>
-      <h2>Gamu Game Studios</h2>
-      <p class="muted">This website is the official online presence of <strong>CÔNG TY TNHH GAMU GAME STUDIOS</strong>, a limited liability company registered in Hanoi, Vietnam. We design, develop and publish digital games, with a current focus on mobile platforms.</p>
-      <p class="muted">Our work covers gameplay design, Unity development, live operations, user acquisition integration and product iteration.</p>
-      <p class="muted">Our first title, <a class="link" href="snake-chroma.html">Snake Chroma</a>, is available on the App Store and Google Play.</p>
-    </div>
-    <div class="card">
-      <h3>Company information</h3>
-      <ul class="info-list">
-        <li><strong>Legal name:</strong><br>CÔNG TY TNHH GAMU GAME STUDIOS</li>
-        <li><strong>Trading name:</strong><br>Gamu Game Studios</li>
-        <li><strong>Business type:</strong><br>Limited Liability Company (Công ty TNHH)</li>
-        <li><strong>Registered address:</strong><br>LK02.No.01 Khu Đồng Dưa, Đường Ngô Thì Nhậm, Phường Hà Đông, Thành phố Hà Nội, Việt Nam</li>
-        <li><strong>Email:</strong><br><a class="link" href="mailto:Admin@gamugame.com">Admin@gamugame.com</a></li>
-        <li><strong>Phone:</strong><br><a class="link" href="tel:+84977813680">+84 977 813 680</a> (0977 813 680)</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="kicker">Our game</div>
-    <h2>Snake Chroma</h2>
-    <div class="game-card card">
-      <div>
-        <h3>A colorful mobile arcade experience</h3>
-        <p class="muted">Snake Chroma is a mobile arcade game developed and published by Gamu Game Studios. Guide your snake, collect colors and chase high scores in quick, replayable sessions. Available now on the App Store and Google Play.</p>
-        <div class="actions">
-          <a class="btn primary" href="https://apps.apple.com/id/app/chroma-snake/id6798214089" target="_blank" rel="noopener">Download on the App Store</a>
-          <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.gamu.snake.flow" target="_blank" rel="noopener">Get it on Google Play</a>
-          <a class="btn secondary" href="snake-chroma.html">Game details</a>
-        </div>
+      <span class="pill"><span class="dot"></span>CÔNG TY TNHH GAMU GAME STUDIOS</span>
+      <h1>Crafting mobile games for <span class="accent">players around the world.</span></h1>
+      <p class="hero-lead">Gamu Game Studios is an independent game development and publishing company based in Hanoi, Vietnam. We design, build and operate accessible mobile games for a global audience.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#about">Discover the studio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="contact.html#business">Partner with us</a>
       </div>
-      <div class="game-art"><img src="assets/snake-chroma-icon.png" alt="Snake Chroma game icon" width="512" height="512"></div>
+    </div>
+    <div class="studio-visual" aria-hidden="true">
+      <div class="orbit o1"></div><div class="orbit o2"></div>
+      <div class="studio-panel">
+        <img src="assets/logo-transparent.png" alt="" width="596" height="408">
+      </div>
+      <div class="studio-chip chip-a"><span class="qi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></span><span><b>Game development</b><small>Unity · iOS &amp; Android</small></span></div>
+      <div class="studio-chip chip-b"><span class="qi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><span><b>Publishing &amp; live ops</b><small>Global distribution</small></span></div>
+      <div class="studio-chip chip-c"><span class="qi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><b>Hanoi, Vietnam</b><small>Headquarters</small></span></div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="facts-wrap">
   <div class="container">
-    <div class="kicker">What we do</div>
-    <div class="grid">
-      <div class="card"><h3>Game Development</h3><p class="muted">Unity-based development for mobile game products and prototypes on iOS and Android.</p></div>
-      <div class="card"><h3>Publishing & Growth</h3><p class="muted">Store publishing, analytics, attribution and advertising integrations.</p></div>
-      <div class="card"><h3>Player Experience</h3><p class="muted">Continuous iteration based on gameplay quality, usability and retention.</p></div>
+    <dl class="facts">
+      <div><dt>Headquarters</dt><dd>Hanoi, Vietnam</dd></div>
+      <div><dt>Company type</dt><dd>Limited Liability Co.</dd></div>
+      <div><dt>Platforms</dt><dd>iOS &amp; Android</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-copy reveal">
+      <div class="eyebrow">Who we are</div>
+      <h2 class="section-title">A focused studio building games that last.</h2>
+      <p>This website is the official online presence of <strong>CÔNG TY TNHH GAMU GAME STUDIOS</strong>, a limited liability company registered in Hanoi, Vietnam. We design, develop and publish digital games, with a current focus on mobile platforms.</p>
+      <p>Our work covers gameplay design, Unity development, live operations, user acquisition integration and product iteration.</p>
+      <a class="text-link" href="#company">Company information <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="principles reveal">
+      <div class="principle">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <div><h3>Player-first</h3><p>Every decision starts with how a game feels in the player’s hands: simple to learn, satisfying to master.</p></div>
+      </div>
+      <div class="principle">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <div><h3>Quality over quantity</h3><p>We ship fewer titles and polish them further, from first prototype to live operations.</p></div>
+      </div>
+      <div class="principle">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+        <div><h3>Data-informed iteration</h3><p>We measure, learn and improve continuously based on gameplay quality, usability and retention.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<footer>
+<section class="section" id="services">
   <div class="container">
-    <strong>CÔNG TY TNHH GAMU GAME STUDIOS</strong><br>
-    Registered address: <strong>LK02.No.01 Khu Đồng Dưa, Đường Ngô Thì Nhậm, Phường Hà Đông, Thành phố Hà Nội, Việt Nam</strong><br>
-    Contact: <a class="link" href="mailto:Admin@gamugame.com"><strong>Admin@gamugame.com</strong></a> · <a class="link" href="tel:+84977813680"><strong>+84 977 813 680</strong></a>
-    <div class="footer-links">
-      <a href="index.html#about">About</a>
-      <a href="snake-chroma.html">Snake Chroma</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
+    <div class="section-head split">
+      <div>
+        <div class="eyebrow">What we do</div>
+        <h2 class="section-title">From first prototype to live game.</h2>
+      </div>
+      <p class="section-lead">We handle the full product lifecycle in-house, so every game we ship is built, launched and improved by the same team.</p>
     </div>
-    <div class="small" style="margin-top:12px">© 2026 CÔNG TY TNHH GAMU GAME STUDIOS. All rights reserved. App Store is a trademark of Apple Inc. Google Play is a trademark of Google LLC.</div>
+    <div class="grid-3">
+      <article class="card card-hover service reveal">
+        <span class="num">01</span>
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+        <h3>Game Development</h3>
+        <p>Unity-based development for mobile game products and prototypes on iOS and Android.</p>
+      </article>
+      <article class="card card-hover service reveal">
+        <span class="num">02</span>
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+        <h3>Publishing &amp; Growth</h3>
+        <p>Store publishing, analytics, attribution and advertising integrations.</p>
+      </article>
+      <article class="card card-hover service reveal">
+        <span class="num">03</span>
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <h3>Player Experience</h3>
+        <p>Continuous iteration based on gameplay quality, usability and retention.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="games">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Our portfolio</div>
+      <h2 class="section-title">Games by Gamu Game Studios</h2>
+    </div>
+    <div class="feature-game reveal">
+      <div>
+        <span class="tag">Our first title</span>
+        <h2 style="margin-top:16px">Snake Chroma</h2>
+        <p class="lead">A colorful mobile arcade experience. Guide your snake, collect colors and chase high scores in quick, replayable sessions. Developed and published by Gamu Game Studios.</p>
+        <div class="tag-row">
+          <span class="tag">Arcade</span><span class="tag">Casual</span><span class="tag">iPhone &amp; iPad</span><span class="tag">Android</span>
+        </div>
+        <div class="store-row">
+            <a class="store-btn" href="https://apps.apple.com/id/app/chroma-snake/id6798214089" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.913 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Download on the</small><b>App Store</b></span></a>
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gamu.snake.flow" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924z"/><path fill="#00f076" d="M13.544 10.989l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973z"/><path fill="#ffc900" d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594z"/><path fill="#ff3a44" d="M13.544 13.056l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg><span><small>GET IT ON</small><b>Google Play</b></span></a>
+          </div>
+        <a class="text-link" href="snake-chroma.html">View game details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="feature-game-art">
+        <img src="assets/snake-chroma-icon.png" alt="Snake Chroma game icon" width="512" height="512" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="company">
+  <div class="container company-grid">
+    <div class="card reveal">
+      <h3 class="card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1"/></svg>Company information</h3>
+      <dl class="dl">
+        <div><dt>Legal name</dt><dd>CÔNG TY TNHH GAMU GAME STUDIOS</dd></div>
+        <div><dt>Trading name</dt><dd>Gamu Game Studios</dd></div>
+        <div><dt>Business type</dt><dd>Limited Liability Company (Công ty TNHH)</dd></div>
+        <div><dt>Registered address</dt><dd>LK02.No.01 Khu Đồng Dưa, Đường Ngô Thì Nhậm, Phường Hà Đông, Thành phố Hà Nội, Việt Nam</dd></div>
+        <div><dt>Email</dt><dd><a class="link" href="mailto:admin@gamugame.com">admin@gamugame.com</a></dd></div>
+        <div><dt>Phone</dt><dd><a class="link" href="tel:+84977813680">+84 977 813 680</a><span class="sub">0977 813 680</span></dd></div>
+      </dl>
+    </div>
+    <div class="cta cta-side reveal">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+      <h2>Let’s work together.</h2>
+      <p>Publishing, advertising, platform and partnership inquiries are always welcome. We reply within 2–3 business days.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:admin@gamugame.com?subject=Business%20inquiry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Send an inquiry</a>
+        <a class="btn btn-ghost" href="contact.html">Contact page</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-transparent.png" alt="Gamu Game Studios" width="596" height="408" loading="lazy">
+        <p>An independent mobile game studio from Hanoi, Vietnam, making simple, polished games for players worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="snake-chroma.html">Snake Chroma</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <address>
+          <strong>CÔNG TY TNHH GAMU GAME STUDIOS</strong>
+          LK02.No.01 Khu Đồng Dưa, Đường Ngô Thì Nhậm, Phường Hà Đông, Thành phố Hà Nội, Việt Nam<br>
+          <a class="link" href="mailto:admin@gamugame.com">admin@gamugame.com</a> · <a class="link" href="tel:+84977813680">+84 977 813 680</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CÔNG TY TNHH GAMU GAME STUDIOS. All rights reserved.</span>
+      <span>App Store is a trademark of Apple Inc. Google Play is a trademark of Google LLC.</span>
+    </div>
   </div>
 </footer>
+
+<script src="script.js" defer></script>
 
 </body>
 </html>

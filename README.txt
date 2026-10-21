@@ -6,7 +6,9 @@ Pages:
   contact.html        Contact + business information
   privacy.html        Privacy Policy
   terms.html          Terms of Service
-  assets/logo.png               Original company logo (opaque background)
+  styles.css          Shared styles (design tokens at the top)
+  script.js           Mobile menu, sticky header, scroll reveal, legal TOC
+  assets/logo.png              Original company logo (opaque background)
   assets/logo-transparent.png   Logo with background removed (used in nav)
   assets/favicon.png            Square favicon / apple-touch-icon from the logo mark
   assets/og-image.png           1200x630 social share image (og:image)
@@ -16,7 +18,7 @@ Pages:
 Company details used on every page:
   Legal name : CÔNG TY TNHH GAMU GAME STUDIOS
   Address    : LK02.No.01 Khu Đồng Dưa, Đường Ngô Thì Nhậm, Phường Hà Đông, Thành phố Hà Nội, Việt Nam
-  Email      : Admin@gamugame.com
+  Email      : admin@gamugame.com
   Phone      : +84 977 813 680
 
 Store links:
