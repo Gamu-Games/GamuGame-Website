@@ -3,6 +3,7 @@ GAMU GAME STUDIOS WEBSITE - DEPLOY CHECKLIST
 Pages:
   index.html          Home / About / Company information
   snake-chroma.html   Official game page (App Store + Google Play links)
+  shape-flow.html     Official game page (Google Play only)
   contact.html        Contact + business information
   privacy.html        Privacy Policy
   terms.html          Terms of Service
@@ -13,6 +14,7 @@ Pages:
   assets/favicon.png            Square favicon / apple-touch-icon from the logo mark
   assets/og-image.png           1200x630 social share image (og:image)
   assets/snake-chroma-icon.png  Game icon (game art + og:image on game page)
+  assets/shape-flow-icon.png    Shape Flow icon (from its Google Play listing)
   robots.txt
 
 Company details used on every page:
@@ -24,6 +26,7 @@ Company details used on every page:
 Store links:
   App Store   : https://apps.apple.com/id/app/chroma-snake/id6798214089
   Google Play : https://play.google.com/store/apps/details?id=com.gamu.snake.flow
+  Shape Flow  : https://play.google.com/store/apps/details?id=com.gamu.shape.flow (Android only)
 
 Deploy:
   - Any static host works (Cloudflare Pages, Netlify, Vercel, GitHub Pages).

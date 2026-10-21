@@ -389,6 +389,75 @@ strong{font-weight:600;color:var(--text)}
 .feature-card.f-blue .icon-box{background:rgba(59,130,246,.16);color:#93c5fd}
 .feature-card.f-green .icon-box{background:rgba(132,204,22,.16);color:#bef264}
 
+/* ---------- Games grid (home portfolio) ---------- */
+.games-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.game-tile{
+  display:flex;flex-direction:column;overflow:hidden;
+  border-radius:24px;background:var(--surface);border:1px solid var(--line);
+  transition:border-color .25s,transform .25s;
+}
+.game-tile:hover{border-color:var(--line-strong);transform:translateY(-4px)}
+.game-tile-art{
+  position:relative;display:grid;place-items:center;aspect-ratio:16/9;overflow:hidden;
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+  background-size:36px 36px;
+}
+.theme-snake .game-tile-art{background-color:#1d2a74;box-shadow:inset 0 0 0 999px rgba(0,0,0,0)}
+.theme-snake .game-tile-art::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 50%,rgba(139,92,246,.55),transparent 70%),linear-gradient(135deg,rgba(255,77,109,.25),transparent 50%,rgba(34,211,238,.25))}
+.theme-shape .game-tile-art{background-color:#3b1580}
+.theme-shape .game-tile-art::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 50%,rgba(250,204,21,.35),transparent 70%),linear-gradient(135deg,rgba(168,85,247,.45),transparent 60%)}
+.game-tile-art img{
+  position:relative;width:42%;max-width:220px;border-radius:24%;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.12);
+  transition:transform .5s;
+}
+.game-tile:hover .game-tile-art img{transform:scale(1.05) rotate(-2deg)}
+.game-tile-body{padding:28px 32px 30px;display:flex;flex-direction:column;flex:1}
+.game-tile-body .tag-row{margin-bottom:16px}
+.game-tile-body h3{font-size:26px;margin-bottom:10px}
+.game-tile-body p{color:var(--muted);flex:1}
+.game-tile-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.game-tile-foot .text-link{margin-top:0}
+.avail{display:flex;align-items:center;gap:10px}
+.avail span{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:#000;border:1px solid var(--line-strong)}
+.avail svg{width:16px;height:16px}
+.avail small{color:var(--muted);font-size:13.5px;margin-left:4px}
+.tag-new{background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.35);color:#86efac}
+
+/* ---------- Shape Flow theme ---------- */
+.game-hero.theme-shape::before{
+  background:
+    radial-gradient(520px 420px at 80% 30%,rgba(168,85,247,.38),transparent 70%),
+    radial-gradient(420px 320px at 90% 55%,rgba(250,204,21,.16),transparent 70%),
+    radial-gradient(400px 300px at 0% 0%,rgba(250,204,21,.10),transparent 70%);
+}
+.game-hero.theme-shape h1 span{background:linear-gradient(90deg,#fde047,#facc15 35%,#c084fc 70%,#a855f7)}
+.game-hero.theme-shape h1 span{-webkit-background-clip:text;background-clip:text;color:transparent}
+.theme-shape .cube.c1{background:#facc15}
+.theme-shape .cube.c2{background:#a855f7}
+.theme-shape .cube.c3{background:#fde047}
+.theme-shape .cube.c4{background:#7c3aed}
+.feature-card.f-yellow .icon-box{background:rgba(250,204,21,.14);color:#fde047}
+
+/* How-to-play steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:none}
+.steps li{position:relative;padding:28px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line)}
+.steps li:not(:last-child)::after{
+  content:"";position:absolute;top:50px;right:-21px;width:22px;height:1px;background:var(--line-strong);
+}
+.step-n{
+  display:grid;place-items:center;width:44px;height:44px;border-radius:14px;margin-bottom:20px;
+  font-family:var(--font-display);font-weight:700;font-size:18px;color:#1a1300;
+  background:linear-gradient(135deg,#fde047,#facc15);
+}
+.steps li:nth-child(2) .step-n{background:linear-gradient(135deg,#c084fc,#a855f7);color:#fff}
+.steps li:nth-child(3) .step-n{background:linear-gradient(135deg,#93c5fd,#3b82f6);color:#fff}
+.steps li:nth-child(4) .step-n{background:linear-gradient(135deg,#fda4af,#fb7185);color:#fff}
+.steps h3{font-size:18px;margin-bottom:8px}
+.steps p{color:var(--muted);font-size:15px}
+
 /* ---------- Contact ---------- */
 .channel{display:flex;flex-direction:column}
 .channel p{flex:1}
@@ -466,6 +535,9 @@ strong{font-weight:600;color:var(--text)}
   .feature-game-art img{width:min(70%,260px)}
   .about-grid{gap:40px}
   .grid-3{grid-template-columns:1fr}
+  .games-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps li::after{display:none}
   .grid-2{grid-template-columns:1fr}
   .game-hero{padding:48px 0 72px}
   .game-hero-art{order:-1}
@@ -495,6 +567,9 @@ strong{font-weight:600;color:var(--text)}
   .store-btn{justify-content:center}
   .hero-actions .btn{flex:1}
   .footer-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .game-tile-body{padding:24px}
+  .game-tile-foot{flex-wrap:wrap}
   .toc ol{columns:1}
   .studio-chip{transform:scale(.88)}
   .chip-a{left:-2%}
